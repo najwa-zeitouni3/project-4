@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+/*----------------------nav------------------*/
+header{
+    height: 8vh;
+}
+header .scontainer{
+    max-width: 1400px;
+    margin: auto;
+}
+header .logo img {
+width: 60px;
+height: 60px;
+}
+nav {
+    background: #333;
+    position: relative;
+    z-index: 10;
+}
+nav #link {
+    display: none;
+}
+.navbar ul a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.navbar a .iocn{
+display: block;
+position: absolute;
+right: 5%;
+top: 0;
+font-size: 25px;
+line-height: 50px;
+}
+/*----------------------head------------------*/
+/*----------------------head gallary-----------------*/
+.head_gallary .grid {
+    width: 50%;
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+}
+.head_gallary .content {
+    position: relative;
+}
+.head_gallary .content::after{
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: 5%;
+    width: 600px;
+    height: 220px;
+    background: #a57c00;
+}
+.head_gallary .grid div {
+    width: 200px;
+    z-index: 1;
+}
+.head_gallary .grid div img{
+    width: 100%;
+    height: 100%;
+}
+/*----------------------head gallary-----------------*/
+/*----------------------dream house------------------*/
+.dream_house{
+    margin-top: 100px;
+    height: 130vh;
+}
+.dream_house .container h1 {
+    font-size: 150px;
+    color: grey;
+    opacity: 0.5;
+}
+.dream_house .container .left::before{
+    content:'';
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background-image: url('img/modern-functional-style-bedroom-interior-design.jpg');
+    left:30%;
+    margin-top: 50px;
+
+}
+.dream_house .container .left::after{
+    content:'';
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 0;
+    background: #556b2f;
+    z-index: -1;
+
+}
+.dream_house .container .right{
+    
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    transform: translateY(50%);
+    z-index: 1;
+}
+.dream_house .container .right .para{
+    border: 1px solid black;
+    padding: 40px;
+}
+.dream_house .container .right .para h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #c2a90f;
+    
+}
+.dream_house .container .right .para p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.dream_house .container .right .para a{
+    text-decoration: none;
+}
+.dream_house .container .img{
+    position: relative;
+
+}
+.dream_house .container::after{
+    content:' ';
+    position:absolute;
+    width: 1000px;
+    height: 420px;
+    background: #a57c00;
+    right: 0;
+    z-index: -1;
+    transform: translateY(50%);
+}
+/*----------------------dream house------------------*/
+/*----------------------design-----------------------*/
+.design{
+    height: 50vh;
+}
+.design .container .para{
+    height: 300px;
+    width: 900px;
+    padding: 50px;
+    border-left: 10px solid #556b2f;
+   margin-top: 100px;
+}
+.design .container .para h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.design .container .para p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+/*----------------------dream house------------------*/
+/*----------------------service-----------------------*/
+.service{
+    background: #556b2f;
+    color: white;
+    height: 80vh;
+}
+.service .container .content{
+    display: flex;
+}
+.service .container .content .left{
+    padding: 50px;
+}
+.service .container .content .left h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.service .container .content .left p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.service .container .content .right{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: -10%;
+}
+.service .container .content .right img{
+    width: 200px;
+    height: 200px;
+}
+.service .container .content .right::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #a57c00;
+    z-index: -1;
+    top: -15%;
+    left: 20%;
+}
+.service .container .bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px;
+    text-align: center;
+    grid-column-gap: 20px;
+    margin-top: 50px;
+}
+.service .container .bottom .box i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.service .container .bottom h2{
+    font-size: 40px;
+}
+/*----------------------dream house------------------*/
+/*----------------------wrapper-----------------------*/
+.wrapper{
+    position: relative;
+}
+.wrapper::after{
+    content: ' ';
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background: #556b2f;
+    z-index: -1;
+    right: 0;
+    bottom: -5%;
+}
+.wrapper .heading{
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 50px;
+}
+.wrapper .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrapper .content .left{
+    width: 40%;
+}
+.wrapper .content .left p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.wrapper .content .right {
+    width: 60%;
+}
+.wrapper .content img{
+    width: 100%;
+    height: 400px;
+}
+/*----------------------dream house------------------*/
+/*----------------------section-----------------------*/
+#img{
+    margin-top: 100px;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+}
+/*----------------------dream house------------------*/
+/*----------------------work-----------------------*/
+.dream_house{
+    margin-top: 100px;
+    height: 130vh;
+}
+.dream_house{
+    margin-top: 100px;
+    height: 130vh;
+}
+.dream_house .container h1 {
+    font-size: 150px;
+    color: grey;
+    opacity: 0.5;
+}
+.dream_house.work h1{
+    margin-bottom: 100px;
+}
+.dream_house.work .container .left::before{
+    
+    background-image: url('img/image16-8.webp');
+   
+
+}
+
+.dream_house.work .container .left::after{
+   margin-top: -50px;
+}
+.dream_house.work .container .right{
+    
+   left: 20%;
+}
+
+.dream_house.work .container::after{
+    content:' ';
+    position:absolute;
+    width: 1000px;
+    height: 400px;
+    background: #a57c00;
+    right: 0;
+    z-index: -2;
+    transform: translateY(0%);
+}
+.dream_house.work .container .right::before{
+    content:' ';
+    position:absolute;
+   background-image: url(img/image16-8.webp);
+   background-repeat: no-repeat;
+   width: 300px;
+   height: 300px;
+   right: -100%;
+   transform: scale(1.2);
+   margin-top: 50px;
+}
+/*----------------------dream house------------------*/
+/*----------------------footer-----------------------*/
+footer{
+    margin-top: 200px;
+    height: 70vh;
+    color: white;
+    text-align: center;
+}
+.footer1{
+    height: 40vh;
+    background: #a57c00;
+    padding: 50px;
+}
+.footer1 h1{
+    margin-bottom: 40px;
+}
+.footer1 p{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.footer1 a{
+    padding: 10px 40px;
+    text-decoration: none;
+    background: white;
+    color: black;
+}
+.footer2 {
+    height: 35vh;
+    background: #556b2f;
+    padding: 50px;
+}
+.footer2 li{
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.footer2 p{
+    font-size: 18px;
+}
+/*----------------------head gallary-----------------*/
+.head{
+    background: #556b2f;
+    height: 90vh;
+    color: white;
+    z-index: -2;
+}
+.head .left{
+    position: absolute;
+    right: 0;
+    padding: 50px;
+}
+.head .left img {
+    width: 1200px;
+    height: 500px;
+}
+.head .heading h1{
+    font-size: 100px;
+    max-width:300px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    z-index: 2;
+}
+.head .heading p{
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    max-width: 300px;
+    font-size: 20px;
+    z-index: 1;
+    line-height:20px;
+}
+/*----------------------head-----------------*/
+/*----------------------nav------------------*/
+/*----------------------resposive------------*/
+@media screen and (max-width:768px){
+    .head{
+        
+        height: 55vh;
+      
+      
+    }
+    .head .left img {
+        width: 600px;
+        height: auto;
+    }
+    .head .heading h1{
+        font-size: 80px;
+        left: 5%;
+        top: 15%;
+      
+    }
+    .head .heading p{
+       
+       top: 30%;
+      
+    }
+    .head_gallary .content::after{
+       
+        left: 15%;
+        
+    }
+    .head_gallary .grid div {
+       margin-left: 20px;
+    }
+    .dream_house .container h1{
+        font-size: 100px;
+    }
+    .dream_house .container .left::before{
+        
+        left:15%;
+      
+    
+    }
+    .dream_house .container .left::after{
+       
+        width: 500px;
+        height: 300px;
+       
+    
+    }
+    .dream_house .container .right{
+    
+       right: 10%;
+    }
+    .dream_house .container::after{
+       
+        width: 600px;
+       
+    }
+    .design .container .para{
+        
+        width: 700px;
+        margin-left: 50px;
+        padding: 20px;
+       
+    }
+    .service .container .content .left{
+        padding:20px;
+        width: 400px;
+    }
+    .service .container .content .left h1{
+        font-size:30px;
+       
+    }
+    .service .container .content .right{
+       margin-left: -20px;
+    }
+    .service .container .content .right img{
+        width: 150px;
+        height: 150px;
+    }
+    .service .container .content .right::after{
+       
+        width: 350px;
+        height: 350px;
+        background: #a57c00;
+       
+        left: 10%;
+    }
+    .service .container .bottom{
+       
+        grid-template-columns: repeat(2,2fr);
+        grid-row-gap: 80px;
+    }
+    .wrapper::after{
+      
+        width: 300px;
+        height: 400px;
+        bottom: -8%;
+    }
+    .wrapper .heading{
+        padding: 70px;
+    }
+    .wrapper .content .left{
+        padding: 10px;
+    }
+    .wrapper .content .right {
+        margin-left: -30px;
+    }
+    .wrapper .content img{
+        width: 100%;
+        height: auto;
+    }
+    .dream_house{
+        margin-top: 100px;
+        height: 100vh;
+    }
+    .dream_house.work h1{
+       padding: 10px;
+       font-size: 100px;
+    }
+    .dream_house.work .container .left::after{
+        width: 400px;
+        height: 700px;
+     }
+     .dream_house.work .container .right{
+    
+        left: 5%;
+     }
+    .dream_house.work .container .right::before{
+       
+       width: 200px;
+       height:200px;
+       right: -40%;
+     
+    }
+}
+@media screen and (max-width:568px){
+    .head{
+        height: 50vh;
+    }
+    .head .left{
+        
+        padding: 0px;
+    }
+    .head .left img {
+        width: 100%;
+        height: 100%;
+    }
+    .head .heading h1{
+        font-size: 30px;
+        left: 0%;
+        top: 10%;
+      
+    }
+    .head .heading p{
+        top: 30%;
+        font-size: 15px;
+        line-height:1;
+    }
+    .head_gallary .grid {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .head_gallary .content::after{
+        top: -2%;
+        left: 27%;
+        width: 300px;
+        height: 950px;
+      
+    }
+    .head_gallary .grid div {
+      width: 100%;
+      height: 100%;
+    }
+    .head_gallary .grid div img{
+       padding: 10px;
+    }
+    .dream_house {
+   
+        height: 150vh !important;
+    }
+    .dream_house .container h1 {
+        font-size: 50px;
+      
+    }
+    .dream_house .container .left::before{
+      
+        width: 300px;
+        height: 300px;
+        left:10%;
+    
+    }
+    .dream_house .container .left::after{
+      
+        width: 200px;
+    
+    }
+    .dream_house .container .right{
+        
+       
+        width: 400px;
+        left: 2%;
+        transform: translateY(70%);
+       
+    }
+    
+    .dream_house .container .right .para h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #c2a90f;
+        
+    }
+    
+    .dream_house .container::after{
+       
+        width: 300px;
+        height: 300px;
+     
+    }
+    .design{
+        
+    }
+    
+    .design .container .para{
+       
+        width: 90%;
+    
+      
+    }
+    .design .container .para h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .design .container .para p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .service{
+       
+        height: 290vh;
+    }
+    .service .container .content{
+       flex-direction: column;
+    }
+    .service .container .content .left{
+        padding: 20px;
+    }
+    
+    .service .container .content .right{
+        
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 0%;
+    }
+    .service .container .content .right img{
+        width: 250px;
+        height: 250px;
+        margin-left: 100px;
+    }
+    .service .container .content .right::after{
+      
+        width: 200px;
+        height: 1000px;
+        top: 0%;
+        left: 53%;
+    }
+    .service .container .bottom{
+       
+        grid-template-columns: repeat(1,1fr);
+     
+        
+    }
+    .wrapper::after{
+        
+        width: 300px;
+        height: 300px;
+        right: 0;
+        bottom: 0%;
+    }
+    .wrapper .heading{
+        max-width: 100%;
+        font-size: 10px;
+        padding: 80px;
+    }
+    .wrapper .content{
+       flex-direction: column;
+    }
+    .wrapper .content .left{
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper .content .right {
+        width:100%;
+        padding: 50px;
+    }
+    .wrapper .content img{
+        width: 100%;
+        height: 100%;
+    }
+    .dream_house.work .container .left::before{
+    
+        background-size: cover;
+       
+    
+    }
+    
+    .dream_house.work .container .left::after{
+      
+       width: 200px;
+       height: 300px;
+    }
+    .dream_house.work .container .right{
+        
+       left: 0%;
+    }
+    
+    .dream_house.work .container::after{
+       
+        width: 300px;
+        height: 500px;
+      
+    }
+    .dream_house.work .container .right::before{
+      
+    
+       width: 100px;
+       height: 100px;
+       right: 0%;
+      
+       margin-top: -100px;
+    }
+    .footer1{
+        height: 60vh;
+        
+    }
+    .footer1 h1{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .footer2 {
+        height: 55vh;
+      
+       
+    }
+    
+}
